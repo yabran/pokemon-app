@@ -2,6 +2,7 @@ import {  ApolloServer } from "apollo-server-micro";
 import {ApolloServerPluginLandingPageGraphQLPlayground} from "apollo-server-core";
 import {typeDefs} from './typeDefs/typeDefs';
 import {resolvers} from './resolvers/resolvers';
+import Cors from 'micro-cors'
 
 
 const apolloServer = new ApolloServer({
